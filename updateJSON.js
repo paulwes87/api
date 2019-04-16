@@ -1,0 +1,12 @@
+const filePath = './api/result/updatedjsonTest.json';
+const fs = require('fs');
+let sampleJson = fs.readFileSync('./api/copyRepo/jsonTest.json');
+console.log('Before function: '+sampleJson);
+let value = JSON.parse(sampleJson);
+console.log(value.company);
+value.company = 'WiproTech';
+console.log('Now updated value:'+value.company);
+console.log(value);
+let a = JSON.stringify(value);
+fs.writeFileSync(filePath, a);
+console.log('Successfully updated Json file');

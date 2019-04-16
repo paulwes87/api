@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<company>
+    <name>Wipro</name>
+    <location>Bangalore</location>
+    <building>tower c1</building>
+    <floor>12</floor>
+    <wing>A</wing>
+</company>
